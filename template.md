@@ -99,7 +99,7 @@ A continuación se detallan las funciones principales que la aplicación debe re
 - Visualizar todos los eventos creados o suscritos.
 - El sistema notificará a los participantes de un evento cuando este sea eliminado o alguien cancele su suscripción.
 
-[![Imagen](https://github.com/DaniCP89/SRS/blob/master/Diagrama_CasoDeUsos.PNG)]
+![Imagen Diagrama Caso de Usos](Diagrama_CasoDeUsos.png)
 
 ### 2.3 Perfiles de usuario
 Identifique los diversos perfiles de usuarios que usarán este producto. Los perfiles de usuario pueden diferenciarse según la frecuencia de uso, el subconjunto de funciones del producto utilizadas, la experiencia técnica, los niveles de seguridad o privilegio, el nivel educativo o la experiencia. Describa las características pertinentes de cada perfil de usuario. Ciertos requisitos pueden concernir solo a ciertos perfiles usuarios. Priorize los perfiles de usuarios de este producto para concer los requisitos que son más necesarios satisfacer.
