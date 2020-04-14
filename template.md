@@ -99,7 +99,7 @@ A continuación se detallan las funciones principales que la aplicación debe re
 - Visualizar todos los eventos creados o suscritos.
 - El sistema notificará a los participantes de un evento cuando este sea eliminado o alguien cancele su suscripción.
 
-[![Esta es una imagen de ejemplo](https://github.com/DaniCP89/SRS/blob/master/Diagrama_CasoDeUsos.PNG)]
+[![Imagen](https://github.com/DaniCP89/SRS/blob/master/Diagrama_CasoDeUsos.PNG)]
 
 ### 2.3 Perfiles de usuario
 Identifique los diversos perfiles de usuarios que usarán este producto. Los perfiles de usuario pueden diferenciarse según la frecuencia de uso, el subconjunto de funciones del producto utilizadas, la experiencia técnica, los niveles de seguridad o privilegio, el nivel educativo o la experiencia. Describa las características pertinentes de cada perfil de usuario. Ciertos requisitos pueden concernir solo a ciertos perfiles usuarios. Priorize los perfiles de usuarios de este producto para concer los requisitos que son más necesarios satisfacer.
@@ -163,84 +163,70 @@ Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ### RF4 - Editar evento deportivo
-El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
-el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ### RF5 - Resitrar cuenta
-El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
-el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ### RF6 - Resitrar cuenta
-El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
-el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ### RF7 - Resitrar cuenta
-El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
-el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ### RF8 - Resitrar cuenta
-El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
-el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ### RF9 - Resitrar cuenta
-El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
-el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ### RF10 - Resitrar cuenta
-El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
-el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+
 
 ## 5. Verificación
 Esta sección proporciona los enfoques y métodos de verificación planeados para calificar el software. Se recomienda que los elementos de información para verificación se proporcionen de manera paralela con los elementos de requisitos en la Sección 4. El propósito del proceso de verificación es proporcionar evidencia objetiva de que un sistema o elemento del sistema cumple con los requisitos y características especificados.
