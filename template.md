@@ -24,36 +24,35 @@ Generada por <Daniel Cuevas Pérez>
 * 4 [Requisitos](#4-requisitos)
   * 4.1 [Precedencia y prioridad](#41-precedencia-y-prioridad) 
   * 4.2 [Funcionales](#42-funcionales)
-* 5 [Verificación](#5-verificación)
 
 ## Versiones
 | Name | Date    | Reason For Changes  | Version   |
 | ---- | ------- | ------------------- | --------- |
 |    Sporter  |    14/04/2020     |          Inicial           |   1.0        |
 |      |         |                     |           |
-|      |         |                     |           |
 
 ## 1. Introducción
-El presente docuemnto, Especificación de requisitos sofware (SRS), ofrece una descripción detallada
+El presente docuemnto, Especificación de Requisitos Sofware (SRS), ofrece una descripción detallada
 de los requisitos necesarios para construir una aplicación de escritorio para la gestión de eventos deportivos.
+
 ### 1.1 Objetivo del documento
 Este documento tiene como objetivo proporcionar información sobre las especificaciones funcionales, no
-funcionales y de calidad del sistema para la implementación de una aplicación de escritorio que permitirá a profesionales deportivos, instalaciones deportivas y el público en general,
+funcionales y de calidad del sistema para la implementación de una aplicación de escritorio que permitima a profesionales deportivos, instalaciones deportivas y el público en general,
 la gestión de eventos deportivos. Este documento está destinado al cliente Sr. Joaquin Ballestero y a los miembros de desarrollo, testing y diseño
 de nuestro equipo.
 
 ### 1.2 Ámbito del proyecto
 Sporter es una aplicación que funcionará en un entorno de escritorio desarrollada en Java, que permitirá a las personas
 gestionar, buscar y consultar eventos deportivos.
+
 En primer objetivo más relevante sería que el sistema permitirá al usuario la opción de crear su propio evento deportivo, permitiendole personalizarlo introduciendo 
 tipo de deporte, número máximo de jugadores, fecha y lugar del evento, color del equipamiento, precio por participar y duración.
 
 Otra meta importante es la de ofrecer la posibilidad al usuario de buscar eventos dependiendo del deporte y en la ubicación que elija.
-Esta opción mostrará una lista con toda la información de los distintos eventos, donde el usuario puede seleccionarlos e inscribirse
-en ellos.
+Esta opción mostrará una lista con toda la información de los distintos eventos, donde el usuario puede seleccionarlos y suscribirse.
 
 Para poder tener una correcta gestión de los eventos, el sistema permitirá visualizar un historial de todos los eventos
-deportivos, tanto si han sido creados por el usuario, como si son inscripciones a otros eventos. Además ofrece la
+deportivos, tanto si han sido creados por el usuario, como si son suscripciones a otros eventos. Además ofrece la
 posibilidad de editar la información del evento creado, eliminarlo por completo o cancelar la asistencia de los eventos de otros usuarios en los que está suscrito.
 Cuando se realiza una cancelación de evento o de suscripción, el sistema informa al lider y a los participates respectivamente por medio de un correo electrónico.
 Estas funcionalidades facilitarán al usuario la coordinación, comunicación y búsqueda de los participantes, agilizando la puesta en marcha del evento.
@@ -67,29 +66,25 @@ Suscripción: Proceso por el cual una persona se une a un evento deportivo.
 Participante: Persona que está inscrita para asistir al evento deportivo.
 Lider: Persona que ha realizado la creación del evento deportivo y es responsable de su organización.
 Historial: Proceso que muestra una lista de todos los eventos deportivos.
-Java: 
-Base de datos:
-MySql:
-JVM: máquina virtual de java capaz de interpretar y ejecutar instrucciones expresadas en un código binario especial.
+Java: Lenguaje de programación orientada a objetos y plataforma informática.
+Base de datos: Conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso.
+MySql: Sistema de gestión de base de datos relacional.
+JVM: Máquina virtual de java capaz de interpretar y ejecutar instrucciones expresadas en un código binario especial.
 
 ### 1.4 Resumen del documento
-El resto del documento contiene cuatro secciones más y los apendices.
+El resto del documento contiene tres secciones.
 El segundo describe los factores generales que afectan al producto que se va a desarrollar y sus requisitos
 de usuario o negocio. Aunque no especifica requisitos del sistema, proporciona la base para entenderlos en la sección 4.
-En la tercera sección se definen las interfazes de usuario de entrada y salida del sistema software, facilitando la comprensión de los requisitos.
+En la tercera sección se definen las interfaces de usuario de entrada y salida del sistema software, facilitando la comprensión de los requisitos.
 La cuarta sección y más importante, especifica los requisitos del producto a nivel de sistema, dividiendolos en diferentes categorías.
-La sección 5 de verificación porporciona los enfoques y métodos de comprobación propuestos para calificar el software.
-Por último tenemos apéndices para incluir o hacer referencia a cualquier tipo de información relevante al documento.
 
 ## 2. Vista general del producto
 
 ### 2.1 Perspectiva del producto
-Sporter será un producto nuevo e independiente que no necesitará de interfaces hardware o software adicionales aparte del sistema operatrivo y la
+Sporter será un producto nuevo e independiente que no necesitará de interfaces adicionales que no sean la del sistema operatrivo y la
 base de datos.
 
 ### 2.2 Funciones del producto
-Resuma las funciones principales que el producto debe realizar o debe permitir que el usuario realice. Los detalles se proporcionarán en la Sección 3, por lo que aquí solo se necesita un resumen de alto nivel (como una lista de los requisitos a nivel de usuario principales). Organice las funciones para que sean comprensibles para cualquier lector del SRS. Cómo extensión, un diagrama de casos de uso puede ayudar a entender esas funcionalidades.
-
 A continuación se detallan las funciones principales que la aplicación debe realizar o debe permitir que el usuario realice:
 
 - Registro de cuentas en el sistema para tener diferentes entornos de trabajo y tener una mejor gestión de los eventos.
@@ -99,12 +94,7 @@ A continuación se detallan las funciones principales que la aplicación debe re
 - Visualizar todos los eventos creados o suscritos.
 - El sistema notificará a los participantes de un evento cuando este sea eliminado o alguien cancele su suscripción.
 
-![Imagen Diagrama Caso de Usos](Diagrama_CasoDeUsos.png)
-
 ### 2.3 Perfiles de usuario
-Identifique los diversos perfiles de usuarios que usarán este producto. Los perfiles de usuario pueden diferenciarse según la frecuencia de uso, el subconjunto de funciones del producto utilizadas, la experiencia técnica, los niveles de seguridad o privilegio, el nivel educativo o la experiencia. Describa las características pertinentes de cada perfil de usuario. Ciertos requisitos pueden concernir solo a ciertos perfiles usuarios. Priorize los perfiles de usuarios de este producto para concer los requisitos que son más necesarios satisfacer.
-Un actor en un caso de uso pertenecerá al menos a un perfil de usuario (podría englobar más). 
-
 El sistema dispondrá de un único perfil de usuario, el cual tendrá acceso a todas las funciones de la aplicación.
 
 ### 2.4 Suposiciones y dependencias
@@ -129,7 +119,7 @@ sobre los datos de las cuentas de usuario y los eventos deportivos.
 | RF4  |      Editar evento      |                                                                       El sistema permitirá lo modificación de los datos de un evento.                                                                       | Fundamental |    R3,R7    | Funcional |
 | RF5  |      Borrar evento      |                                                                              El sistema permitirá la eliminación de un evento.                                                                              | Fundamental |    R3,R7    | Funcional |
 | RF6  |      Buscar evento      |                                                                     El sistema deberá mostrar los eventos deportivos de otros usuarios.                                                                     | Fundamental |             | Funcional |
-| RF7  | Suscrivirse a un evento |                                                                       El sistema permitirá la suscripción a eventos de otros usuarios.                                                                      | Fundamental |      R6     | Funcional |
+| RF7  | Suscribirse a un evento |                                                                       El sistema permitirá la suscripción a eventos de otros usuarios.                                                                      | Fundamental |      R6     | Funcional |
 | RF8  |   Historial de eventos  |                                                                        El sistema deberá mostrar un historial con todos los eventos.                                                                        | Fundamental |    R3,R7    | Funcional |
 | RF9  |      Notificaciones     |                                                El sistema deberá notificar a los participantes de un evento de<br>modificaciones o de su propia eliminación.                                                | Fundamental |      R5     | Funcional |
 | RF10 |  Comprobación de cuenta |                                                                         El sistema deberá verificar la validez del inicio de sesión.                                                                        | Fundamental |    R1,R2    | Funcional |
@@ -137,99 +127,96 @@ sobre los datos de las cuentas de usuario y los eventos deportivos.
 ### 4.2 Funcionales
 
 ### RF1 - Registrar cuenta
-
+El sistema permitirá la creación de una cuenta de usuario. Mostrará un formulario solicitando información sobre el nombre de la cuenta, contraseña y correo electrónico.
 #### Dependencias 
 Ninguna.
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+Derivado de un caso de uso.
 
 ### RF2 - Iniciar sesión
-El sistema permitirá el acceso al usuario a su entorno de trabajo. El sistema mostrara un pequeño formulario
+El sistema permitirá el acceso al usuario a su entorno de trabajo. El sistema mostrará un pequeño formulario solicitando nombre de usuario y contraseña.
 #### Dependencias 
 RF1
 #### Priodidad
 Fundamental.
 #### Justificación
-Para que la aplicación pueda usarse con difirentes usuarios y cada uno de ellos tengan un gestión de los eventos en un mismo lugar.
+Derivado de un caso de uso.
 
 ### RF3 - Crear evento deportivo
 El sistema permitirá registrar, mediante un formulario, los datos referentes a la creación de un evento deportivo. El formulario tendrá como campos de texto el nombre del propietario del evento,
 el cual se autocompletará al abrirse el formulario, un tipo de deporte, el numero de participantes que formarán el evento, la ubicación donde se celebrará, la hora y fecha, tipo de equipación y el
-precio por participante.
+precio por participante. El evento creado se podrá visualizar en el historial.
 #### Dependencias 
-Ninguna.
+RF2.
 #### Priodidad
 Fundamental.
 #### Justificación
-
+Derivado de un caso de uso.
 
 ### RF4 - Editar evento deportivo
-
+El sistema deberá dar la posibilidad de modificar los datos sobre un evento deportivo seleccionado en el historial de eventos.
 #### Dependencias 
-Ninguna.
+RF2,RF8.
 #### Priodidad
 Fundamental.
 #### Justificación
+Derivado de un caso de uso.
 
-
-### RF5 - Resitrar cuenta
-
+### RF5 - Borrar evento deportivo
+El sistema deberá dar la posibilidad de eliminar un evento deportivo ubicado en el historial. Pueden ser eventos creados por el usuario o en los cuales está suscrito. 
 #### Dependencias 
-Ninguna.
+RF2,RF8.
 #### Priodidad
 Fundamental.
 #### Justificación
+Derivado de un caso de uso.
 
 
-### RF6 - Resitrar cuenta
-
+### RF6 - Buscar evento deportivo
+El sistema permitirá la búsqueda de eventos deportivos de otros usuarios. Esta búsqueda tendrá dos opciones de filtrado, una será por localidad y la otra por el tipo de deporte.
 #### Dependencias 
-Ninguna.
+RF2.
 #### Priodidad
 Fundamental.
 #### Justificación
+Derivado de un caso de uso.
 
 
-### RF7 - Resitrar cuenta
-
+### RF7 - Suscrivirse a un evento
+El sistema permitirá la suscripción a eventos creados por otros usuarios, mostrados en la funcionalidad de búsqueda de eventos.
 #### Dependencias 
-Ninguna.
+RF2,RF6.
 #### Priodidad
 Fundamental.
 #### Justificación
+Derivado de un caso de uso.
 
-
-### RF8 - Resitrar cuenta
-
+### RF8 - Historial de eventos
+El sistema deberá mostrar una tabla con la información de todos los eventos creados por el usuario o en los cuales está suscrito.
 #### Dependencias 
-Ninguna.
+RF2.
 #### Priodidad
 Fundamental.
 #### Justificación
+Derivado de un caso de uso.
 
-
-### RF9 - Resitrar cuenta
-
+### RF9 - Notificaciones
+El sistema deberá notificar a los suscriptores o al lider sobres modificaciones del evento o de su propia eliminación.
 #### Dependencias 
-Ninguna.
+RF2, RF4, RF5.
 #### Priodidad
 Fundamental.
 #### Justificación
+Derivado de un caso de uso.
 
-
-### RF10 - Resitrar cuenta
-
+### RF10 - Comprobación de cuenta
+El sistema deberá verificar la validez de los datos introducidos en el registro de cuenta. Comprobando que el correo electrónico es corrento y no hay una cuenta existente en la base de datos con los mismos datos.
+Además tendrá que comprobar que los datos de inicio de sesión son correctos.
 #### Dependencias 
-Ninguna.
+RF1, RF2.
 #### Priodidad
 Fundamental.
 #### Justificación
-
-
-## 5. Verificación
-Esta sección proporciona los enfoques y métodos de verificación planeados para calificar el software. Se recomienda que los elementos de información para verificación se proporcionen de manera paralela con los elementos de requisitos en la Sección 4. El propósito del proceso de verificación es proporcionar evidencia objetiva de que un sistema o elemento del sistema cumple con los requisitos y características especificados.
-
-
-
+Derivado de un caso de uso.
